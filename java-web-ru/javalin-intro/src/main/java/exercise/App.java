@@ -11,8 +11,6 @@ public final class App {
         var app = Javalin.create();
         // Описываем, что загрузится по адресу /
         app.get("/welcome", ctx -> ctx.result("Welcome to Hexlet!"));
-        app.start(7070); // Стартуем веб-сервер
-
         return app;
         // END
     }
